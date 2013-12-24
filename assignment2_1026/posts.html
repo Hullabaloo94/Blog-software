@@ -1,0 +1,37 @@
+<html>
+
+	<head>
+		<title>Index</title>
+		 <link rel="stylesheet" type="text/css" href="../assignment2_1026/css/style.css" />
+
+		<script type="text/javascript" src="../assignment2_1026/js/jquery-1.10.2.js"></script>
+
+		<script type="text/javascript" src="../assignment2_1026/js/create.js"></script>
+
+		<script type="text/javascript" src="../assignment2_1026/js/blog.js"></script>
+
+		<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+
+		<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
+		<!--<script type="text/javascript" src="../assignment2_1026/js/simple-login.js"></script>-->
+		
+	</head>
+
+	<body>
+
+		<script>
+		var myDataRef = new Firebase('https://blog-store.firebaseio.com/');
+		</script>
+			
+		<header>
+			<h1>Blogs page</h1> 
+			<button class="to-create-post"><a href="..\assignment2_1026\create.html">Create a Post!</a></button>
+		</header>
+
+		<p>Previously posted Blogs are shown below:</p>
+
+		<ul>
+			<li id="blogs"></li> 
+		</ul>
+	</body>
+</html>

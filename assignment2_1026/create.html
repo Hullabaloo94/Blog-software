@@ -1,0 +1,53 @@
+<html>
+
+	<head>
+
+		<title>Create a Post!</title>
+		 <link rel="stylesheet" type="text/css" href="../assignment2_1026/css/style.css" />
+
+		<script type="text/javascript" src="../assignment2_1026/js/jquery-1.10.2.js"></script>
+
+		<script type="text/javascript" src="../assignment2_1026/js/create.js"></script>
+
+		<script src='https://cdn.firebase.com/v0/firebase.js'></script>
+
+		<script type='text/javascript' src='https://cdn.firebase.com/v0/firebase-simple-login.js'></script>
+		<!--<script type="text/javascript" src="../assignment2_1026/js/simple-login.js"></script>-->
+
+	</head>
+
+	<body>
+
+		<script>
+		var myDataRef = new Firebase('https://blog-store.firebaseio.com/Blogs');
+		</script>
+
+
+	<header>
+		<h1>Create a Blog!</h1>
+		<button id="back-to-blogs"><a href="..\assignment2_1026\posts.html">Back to Index Page!</a></button>
+	</header>
+
+	<div class="container">
+    	<input 
+    		type='text'
+    		id='name_input'
+    		placeholder='Title'>
+
+    	<textarea 
+    		type='text'
+    		rows="4"
+    		cols="50"
+    		id='message_input'
+    		placeholder='Enter your blog content here'></textarea>
+
+    	<input
+			type="button"
+			id="submit_btn"
+			value="Submit Blog!"
+			onclick="javascript:submitOnClick()"/>
+	</div> 
+
+	</body>
+
+</html>
